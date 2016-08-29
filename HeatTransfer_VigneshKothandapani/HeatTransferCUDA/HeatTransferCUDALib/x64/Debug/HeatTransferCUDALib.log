@@ -1,0 +1,47 @@
+﻿Build started 10/30/2015 1:50:03 PM.
+     1>Project "C:\Users\vxk5499\Downloads\HeatTransferCUDA\HeatTransferCUDALib\HeatTransferCUDALib.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "x64\Debug\HeatTransferCUDALib.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       AddCudaCompileDeps:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /D_MBCS /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\include" /I. /FIcuda_runtime.h /c C:\Users\vxk5499\Downloads\HeatTransferCUDA\HeatTransferCUDALib\HeatTransfer.cu 
+       AddCudaCompilePropsDeps:
+       Skipping target "AddCudaCompilePropsDeps" because all output files are up-to-date with respect to the input files.
+       CudaBuild:
+         Compiling CUDA source file HeatTransfer.cu...
+         cmd.exe /C "C:\Users\vxk5499\AppData\Local\Temp\tmpf6018caf60c84c888b398d2282f49195.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\bin\nvcc.exe" -gencode=arch=compute_10,code=\"sm_10,compute_10\" --use-local-env --cl-version 2010 -ccbin "c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\include"  -G   --keep-dir "x64\Debug" -maxrregcount=0 --ptxas-options=-v --machine 64 --compile  -g   -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MD  " -o "x64\Debug\HeatTransfer.cu.obj" "C:\Users\vxk5499\Downloads\HeatTransferCUDA\HeatTransferCUDALib\HeatTransfer.cu"
+         
+         C:\Users\vxk5499\Downloads\HeatTransferCUDA\HeatTransferCUDALib>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\bin\nvcc.exe" -gencode=arch=compute_10,code=\"sm_10,compute_10\" --use-local-env --cl-version 2010 -ccbin "c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\include"  -G   --keep-dir "x64\Debug" -maxrregcount=0 --ptxas-options=-v --machine 64 --compile  -g   -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MD  " -o "x64\Debug\HeatTransfer.cu.obj" "C:\Users\vxk5499\Downloads\HeatTransferCUDA\HeatTransferCUDALib\HeatTransfer.cu" 
+         HeatTransfer.cu
+     1>C:/Users/vxk5499/Downloads/HeatTransferCUDA/HeatTransferCUDALib/HeatTransfer.cu(79): warning : variable "flags" was declared but never referenced
+         
+         tmpxft_00009df0_00000000-2_HeatTransfer.cudafe1.gpu
+         tmpxft_00009df0_00000000-7_HeatTransfer.cudafe2.gpu
+         HeatTransfer.cu
+     1>C:/Users/vxk5499/Downloads/HeatTransferCUDA/HeatTransferCUDALib/HeatTransfer.cu(79): warning : variable "flags" was declared but never referenced
+         
+         ptxas : info : 136 bytes gmem, 20 bytes cmem[14]
+         ptxas : info : Compiling entry function '_Z19UpdateHeatMapKernelPfif' for 'sm_10'
+         ptxas : info : Used 11 registers, 32 bytes smem, 8 bytes cmem[1], 80 bytes lmem
+         tmpxft_00009df0_00000000-2_HeatTransfer.cudafe1.cpp
+         tmpxft_00009df0_00000000-12_HeatTransfer.ii
+         Deleting file "tmpxft_00009df0_00000000-8_HeatTransfer.cpp3.o".
+       Lib:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\Users\vxk5499\Downloads\HeatTransferCUDA\x64\Debug\HeatTransferCUDALib.lib" /NOLOGO x64\Debug\HeatTransfer.cu.obj
+         HeatTransferCUDALib.vcxproj -> C:\Users\vxk5499\Downloads\HeatTransferCUDA\x64\Debug\HeatTransferCUDALib.lib
+       PostBuildEvent:
+         echo copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\bin\cudart*.dll" "C:\Users\vxk5499\Downloads\HeatTransferCUDA\x64\Debug\"
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\bin\cudart*.dll" "C:\Users\vxk5499\Downloads\HeatTransferCUDA\x64\Debug\"
+         :VCEnd
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\bin\cudart*.dll" "C:\Users\vxk5499\Downloads\HeatTransferCUDA\x64\Debug\"
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\bin\cudart32_50_35.dll
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\bin\cudart64_50_35.dll
+                 2 file(s) copied.
+       FinalizeBuildStatus:
+         Deleting file "x64\Debug\HeatTransferCUDALib.unsuccessfulbuild".
+         Touching "x64\Debug\HeatTransferCUDALib.lastbuildstate".
+     1>Done Building Project "C:\Users\vxk5499\Downloads\HeatTransferCUDA\HeatTransferCUDALib\HeatTransferCUDALib.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.96
